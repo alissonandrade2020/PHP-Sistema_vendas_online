@@ -75,18 +75,4 @@
   </section>
 
 
-</main><?php
-$conection = new PDO('mysql:host=localhost;dbname=vendasonline', 'root', '');
-
-$query   = $conection->prepare("SELECT * FROM produtos");
-$query->execute();
-$result = $query->fetchAll();
-
-foreach($result as $produto){
-    echo 'Nome do produtos: '.$produto['produto'].'<br/>';
-    echo 'Qtde do produtos: '.$produto['quantidade'].'<br/>';
-    echo 'Preço do produtos: '.number_format($produto['preco'], 2, ",",".").'<br/>';
-    echo '<a href="carrinho.php?add=carrinho&id='.$produto['id'].'">Adicionar ao carrinho</a><br/><br/>';
-
-
-}
+</main>

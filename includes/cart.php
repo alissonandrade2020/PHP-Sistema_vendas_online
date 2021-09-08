@@ -12,9 +12,9 @@ $query->execute();
 $result = $query->fetchAll();
 
 foreach($result as $produto){
-    echo 'Nome do produtos: '.$produto['produto'].'<br/>';
-    echo 'Qtde do produtos: '.$produto['quantidade'].'<br/>';
-    echo 'Preço do produtos: '.number_format($produto['preco'], 2, ",",".").'<br/>';
+    echo 'Produto: '.$produto['produto'].'<br/>';
+    echo 'Quantidade: '.$produto['quantidade'].'<br/>';
+    echo 'Valor unitário: '.number_format($produto['preco'], 2, ",",".").'<br/>';
     echo '<a href="removerProduto.php?id='.$produto['id'].'"><button type="button" class="btn btn-danger">Remover</button></a><br><br>';
 
 
