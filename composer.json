@@ -1,0 +1,14 @@
+{
+    "name": "indra/site-indra",
+    "description": "Aplicação desenvolvida no desafio para vaga php[Indra]",
+    "authors": [
+        {
+            "name": "Alisson de Andrade Araújo"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/"
+        }
+    } 
+}
