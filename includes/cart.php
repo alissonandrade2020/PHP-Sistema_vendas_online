@@ -48,8 +48,7 @@ foreach($result as $produto){
           
             while($linha = mysqli_fetch_array($resultado)){
               echo $linha['sum(preco)'].'<br/><br/>';
-              echo 'Preço do produtos: '.number_format($produto['sum(preco)'], 2, ",",".").'<br/>';
-                
+              
                 ?>
           
             <?php
