@@ -26,8 +26,8 @@ if(isset(
     exit;
 }
 
-include __DIR__.'/includes/header.php';
-include __DIR__.'/includes/form_cliente.php';
-include __DIR__.'/includes/footer.php';
+include __DIR__.'/app/view/header.php';
+include __DIR__.'/app/view/form_cliente.php';
+include __DIR__.'/app/view/footer.php';
 
 

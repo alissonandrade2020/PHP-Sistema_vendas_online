@@ -32,8 +32,8 @@ if(isset(
     exit;
 }
 
-include __DIR__.'/includes/header.php';
-include __DIR__.'/includes/cart.php';
-include __DIR__.'/includes/footer.php';
+include __DIR__.'/app/view/header.php';
+include __DIR__.'/app/view/cart.php';
+include __DIR__.'/app/view/footer.php';
 
 
