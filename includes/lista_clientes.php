@@ -46,7 +46,7 @@
     <a href="index.php">
       <button class="btn btn-outline-warning">Voltar</button>
     </a>
-    <a href="cliente.php">
+    <a href="clientes.php">
       <button class="btn btn-success">Novo cliente</button>
     </a>
   </section>

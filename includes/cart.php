@@ -1,8 +1,21 @@
+    <div id="alerta">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>CLIENTE:</strong> Você estar a um passo de finalizar o <b>pedido</b> verifique se os <b>produtos</b> que vai <b>no carrinho</b> são os que você realmente deseja comprar  !    
+        </div>
+    </div>    
+    <script>
+      $().ready(function() {
+        setTimeout(function () {
+          $('#alerta').hide(); // "alerta" é o id do elemento que seja manipular.
+	      }, 1200); // O valor é representado em milisegundos.
+      });
+    </script>
+  
   <section>
     <a href="lista_compras.php">
       <button class="btn btn-outline-warning">Voltar</button>
     </a>
-</section>
+  </section>
 <br>
 <?php
 $conection = new PDO('mysql:host=localhost;dbname=vendasonline', 'root', '');

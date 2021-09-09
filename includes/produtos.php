@@ -12,7 +12,7 @@
     </script>
 <main>
     <section>
-        <a href="cliente.php" class="btn btn-outline-primary" role="button" aria-pressed="true">Cadastrar Cliente(es)</a>
+        <a href="clientes.php" class="btn btn-outline-primary" role="button" aria-pressed="true">Cadastrar Cliente(es)</a>
         <a href="produto.php" class="btn btn-outline-primary" role="button" aria-pressed="true">Cadastrar Produto(os)</a>
         <a href="lista_clientes.php" class="btn btn-outline-secondary" role="button" aria-pressed="true">Lista dos Clientes</a>
         <a href="lista_produtos.php" class="btn btn-outline-secondary" role="button" aria-pressed="true">Lista dos Produtos</a>
