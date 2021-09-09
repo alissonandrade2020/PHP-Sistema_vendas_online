@@ -21,7 +21,7 @@ foreach($result as $produto){
   }       
 
 ?>       
-       <th><b>Total de Itens selecionado:</b>
+       <th><b>Total de Itens selecionados:</b>
            <?php
 			
           $conn = mysqli_connect('localhost','root','','vendasonline');	

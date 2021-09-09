@@ -13,7 +13,7 @@
         <button type="button" class="btn btn-success">Cancelar</button>
       </a>
 
-      <button type="submit" name="excluir" class="btn btn-danger">Excluir</button>
+      <button type="submit" class="btn btn-danger">Excluir</button>
     </div>
 
   </form>

@@ -32,6 +32,7 @@
                       </td>
                     </tr>';
   }
+  
 
   $resultados = strlen($resultados) ? $resultados : '<tr>
                                                        <td colspan="6" class="text-center">
