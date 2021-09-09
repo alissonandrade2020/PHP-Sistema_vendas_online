@@ -21,11 +21,11 @@
 </p>
 
 <p align="center">
-  <img alt="Backend" src="https://github.com/alissonandrade2020/PHP-Sistema_vendas_online/blob/master/public/gif/backend.gif" width="100%">
+  <img alt="Backend" src="https://github.com/alissonandrade2020/PHP-Sistema_vendas_online/blob/master/app/public/gif/backend.gif" width="100%">
 </p>
 
 <p align="center">
-  <img alt="Frontend" src="https://github.com/alissonandrade2020/PHP-Sistema_vendas_online/blob/master/public/gif/frontend.gif" width="100%">
+  <img alt="Frontend" src="https://github.com/alissonandrade2020/PHP-Sistema_vendas_online/blob/master/app/public/gif/frontend.gif" width="100%">
 </p>
 
 ## Tecnologias
