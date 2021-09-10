@@ -33,7 +33,9 @@ foreach($result as $produto){
 
   }       
 
-?>       
+?>   
+
+    
        <th><b>Total de Itens selecionados:</b>
            <?php
 			
@@ -51,7 +53,7 @@ foreach($result as $produto){
           ?>
       </th>
 
-      <th><b>Total:</b>
+      <th><b>Total a pagar:</b>
            <?php
 			
             $conn = mysqli_connect('localhost','root','','vendasonline');	

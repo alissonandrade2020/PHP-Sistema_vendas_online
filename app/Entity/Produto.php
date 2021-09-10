@@ -19,6 +19,13 @@ class Produto{
    */
   public $produto;
 
+
+  /**
+   * Quantidade do produto 
+   * @var string
+   */
+  public $imagem;
+
   /**
    * Quantidade do produto 
    * @var string
@@ -55,6 +62,7 @@ class Produto{
     $obDatabase = new Database('produtos');
     $this->id = $obDatabase->insert([
                                       'produto'    => $this->produto,
+                                      'imagem'     => $this->imagem,
                                       'quantidade' => $this->quantidade,
                                       'preco'      => $this->preco,
                                       'ativo'      => $this->ativo,
@@ -72,6 +80,7 @@ class Produto{
   public function atualizar(){
     return (new Database('produtos'))->update('id = '.$this->id,[
                                                                 'produto'    => $this->produto,
+                                                                'imagem'     => $this->imagem,
                                                                 'quantidade' => $this->quantidade,
                                                                 'preco'      => $this->preco,
                                                                 'ativo'      => $this->ativo,

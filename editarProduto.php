@@ -25,6 +25,7 @@ if(!$obProduto instanceof Produto){
 if(isset($_POST['produto'],$_POST['quantidade'],$_POST['preco'],$_POST['ativo'])){
   
   $obProduto->produto = $_POST['produto'];
+  $obProduto->imagem = $_POST['imagem'];
   $obProduto->quantidade = $_POST['quantidade'];
   $obProduto->preco = $_POST['preco'];
   $obProduto->ativo = $_POST['ativo'];

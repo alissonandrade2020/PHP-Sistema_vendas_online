@@ -1,3 +1,25 @@
+  <style type="text/css">
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+     h2.title{
+       background-color: #808080;
+       width: 100%;
+       padding: 20px;
+       text-align: center;
+       color: white;
+       border-radius: 10px 20px 30px;
+     }
+
+     .carrinho-container{
+       display: flex;
+       margin-top:10px
+     }
+
+     .produto{
+        width: 33.3%;
+        padding: 0 30px;        
+     }
+  </style>
+    
     <div id="alerta">
         <div class="alert alert-danger" role="alert">
             <strong>CLIENTE:</strong> Antes de finalizar seu <b>pedido</b> verifique se os <b>produtos</b> que vai <b>adicionar no carrinho</b> são os que você realmente deseja comprar  !    
@@ -23,25 +45,7 @@
         $mensagem = '<div class="alert alert-danger">Ação não executada!</div>';
         break;
     }
-  }
-
-  $resultados = '';
-  foreach($produtos as $produto){
-    $resultados .= '<tr>
-                      <td>'.$produto->produto.'</td>
-                      <td>'.$produto->preco.'</td>
-                      <td>'.($produto->ativo == 's' ? 'Disponível' : 'Indisponível').'</td>
-                      <td>    
-                      <a href="cart.php" class="btn btn-primary" role="button" aria-pressed="true">Adicionar ao Carrinho</a>
-                      </td>
-                    </tr>';
-  }
-
-  $resultados = strlen($resultados) ? $resultados : '<tr>
-                                                       <td colspan="6" class="text-center">
-                                                              Nenhum produto encontrado
-                                                       </td>
-                                                    </tr>';
+  }  
 
 ?>
 <main>
@@ -54,24 +58,33 @@
     </a>
   </section>
   <br>
-  <div class="container">
-    <section>
-      <table class="table table-striped table-dark" class="table bg-light mt-3">
-        <thead class="thead-light">
-          <tr>
-            <th>Produto</th>
-            <th>Preco</th>
-            <th>Status</th>
-            <th colspan="2" align="center"></th>            
-          </tr>
-        </thead>
-        <tbody>
-            <?=$resultados?>
-        </tbody>
-      </table>
+  <h2 class="title">Escolha o(os) produto(os)</h2>
+  <div class="carrinho-container">
 
-    </section>
-  </div>
+  <?php  
 
+    $items = array("azul", "vermelho", "amarelo", "verde"); 
 
+   foreach ($items as $key){
+     
+ ?>
+
+    <div class="produto">
+      <img src="<?php echo $value['imagem']?>" />
+      <a class="btn btn-primary" role="button" aria-pressed="true" href="?adicionar=<?php echo $key ?>">Adicionar ao Carrinho</a>
+    </div>
+  </div>      
+    
+  <?php
+   }
+
+  ?>    <div></div><!-- CarrinhoContainer-->
+  <?php
+    if(isset($_GET['adicionar'])){
+      $produto = (int) $_GET['adicionar'];
+
+    }
+
+  ?>
+  
 </main>

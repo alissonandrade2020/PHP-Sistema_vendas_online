@@ -25,6 +25,7 @@
                 <label>Produto</label>
                 <input type="text" class="form-control" name="produto" placeholder="Ex: Monitor" value="<?=$obProduto->produto?>" required>
             </div>
+            
             <div class="form-group col-md-4">
                 <label>Quantidade:</label>
                 <input type="numeric" class="form-control" name="quantidade" placeholder="Ex: 15" value="<?=$obProduto->quantidade?>" required>
@@ -33,6 +34,12 @@
                 <label>Valor do Produto</label>
                 <input type="text" class="form-control"  name="preco" placeholder="Ex: R$ 1.487,00" value="<?=$obProduto->preco?>" required>
             </div>  
+            <div class="form-group col-md-4">
+              <input type="hidden" name="MAX_FILE_SIZE" value="99999999"/>
+              <div>
+                <input name="imagem" type="file"/>
+              </div>
+            </div>            
             <div class="form-group col-md-4"> 
               <label>Estoque:</label>         
 
@@ -49,8 +56,8 @@
                   </label>  
                 </div>
 
-              </div>
-
+              </div>            
+             
             </div>   
         </div>
         <input type="submit" class="btn btn-success mb-2" value="Cadastrar">

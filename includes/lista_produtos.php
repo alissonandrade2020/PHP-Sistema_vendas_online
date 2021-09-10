@@ -18,6 +18,7 @@
     $resultados .= '<tr>
                       <td>'.$produto->id.'</td>
                       <td>'.$produto->produto.'</td>
+                      <td>'.$produto->imagem.'</td>
                       <td>'.$produto->quantidade.'</td>
                       <td>'.$produto->preco.'</td>
                       <td>'.($produto->ativo == 's' ? 'Disponível' : 'Indisponível').'</td>
@@ -61,6 +62,7 @@
           <tr>
             <th>ID</th>
             <th>Produto</th>
+            <th>Imagem</th>
             <th>Quantidade</th>
             <th>Preco</th>
             <th>Status</th>
