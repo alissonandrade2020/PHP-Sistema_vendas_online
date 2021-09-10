@@ -58,7 +58,7 @@
   
 <br>
 <?php
-    session_start();
+  session_start();
     foreach ($_SESSION['carrinho'] as $key => $value) {
        //Nome do produto
        //Quantidade
